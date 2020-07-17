@@ -1,0 +1,33 @@
+.container{
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 30rpx;
+}
+.item{
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    height: 42rpx;
+    width: 200rpx;
+    padding-right: 10rpx;
+    padding-left: 100rpx;
+}
+.people{
+    display: flex;
+}
+.img{
+    width: 80rpx;
+    height: 80rpx;
+}
+.floor{
+  font-weight: bold;
+}

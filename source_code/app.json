@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/comment/home",
+    "pages/detail/detail",
+    "pages/userInfo/userInfo",
+    "pages/info/info",
+    "pages/detect_num/home/home",
+    "pages/detect_num/time/index",
+    "pages/login/login",
+    "pages/taste/taste",
+    "pages/msg/msg"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFA500",
+    "navigationBarTitleText": "您吃了吗",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#FFA500",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/首页.png",
+        "selectedIconPath": "assets/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/comment/home",
+        "text": "评价",
+        "iconPath": "assets/评价.png",
+        "selectedIconPath": "assets/评价 (1).png"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "assets/身份证.png",
+        "selectedIconPath": "assets/身份证 (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

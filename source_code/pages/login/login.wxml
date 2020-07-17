@@ -1,0 +1,15 @@
+<view wx:if="{{canIUse}}">
+  <view class='header'>
+    <image src='http://m.qpic.cn/psc?/931299a0-15dc-449d-9b43-71d170fd1e7a/zkoezU7GGNbZGOF.DPhgQdXzfGVH5rLGforWsSjxaVKQsuaAHeUgv9IzsUvVng9XZA03z4QA3UZ6hhyEyiSiRPsC*9yyLWwIuQOFD7zPjVE!/b&bo=yADIAMgAyAADCSw!&rf=viewer_4&t=5'></image>
+  </view>
+
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>获得你的公开信息(昵称，头像等)</text>
+  </view>
+
+  <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+    授权登录
+  </button>
+</view>
+<view wx:else>请升级微信版本</view>

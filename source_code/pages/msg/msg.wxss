@@ -1,0 +1,36 @@
+page{
+    background-color: rgb(244, 245, 246, 1); 
+}
+.list{
+    padding: 20rpx 30rpx;
+    background-color: white;
+    margin-top: 50rpx;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+}
+.avatar{
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    align-items: center;
+    margin: 20rpx 0;
+}
+.commend{
+    display: flex;
+    align-items: center;
+    background-color:rgb(244, 245, 246, 1);
+    margin-bottom: 20rpx;
+}
+.commend_detail{
+    background-color:rgb(244, 245, 246, 1);
+    font-size:35rpx;
+    margin: 0 20rpx;
+}

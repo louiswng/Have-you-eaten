@@ -1,0 +1,75 @@
+<!--pages/home/home.wxml-->
+<!-- <block wx:for="{{datalist}}" wx:key="index">
+  <view class="itemroot" bindtap="gotoDetail" data-item="{{item}}">
+    <text>{{item.title}}</text>
+     <text>{{item.desc}}</text>
+  </view>
+</block> -->
+<i-notice-bar icon="systemprompt" closable>
+    记得提交您的用餐评价喔！
+</i-notice-bar>
+<i-grid class = "bgcolor" border="{{false}}">
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[0]}}">
+        <i-grid-icon>
+            <image src="{{imglist['学一']}}" />
+        </i-grid-icon>
+        <i-grid-label>学生食堂一层</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[1]}}">
+        <i-grid-icon>
+            <image src="{{imglist['学二']}}" />
+        </i-grid-icon>
+        <i-grid-label>学生食堂二层</i-grid-label>
+    </i-grid-item>
+     <i-grid-item bindtap="gotoDetail" data-item="{{datalist[2]}}">
+        <i-grid-icon>
+            <image src="{{imglist['学三']}}" />
+        </i-grid-icon>
+        <i-grid-label>学生食堂三层</i-grid-label>
+    </i-grid-item>
+</i-grid>
+
+<i-grid class = "bgcolor">
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[3]}}">
+        <i-grid-icon>
+            <image src="{{imglist['学四']}}" />
+        </i-grid-icon>
+        <i-grid-label>学生食堂四层</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[4]}}">
+        <i-grid-icon>
+            <image src="{{imglist['学五']}}" />
+        </i-grid-icon>
+        <i-grid-label>学生食堂五层</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[5]}}">
+        <i-grid-icon>
+            <image src="{{imglist['教一']}}" />
+        </i-grid-icon>
+        <i-grid-label>教师食堂一层</i-grid-label>
+    </i-grid-item>
+</i-grid>
+
+<i-grid class = "bgcolor">
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[6]}}">
+        <i-grid-icon>
+            <image src="{{imglist['教二']}}" />
+        </i-grid-icon>
+        <i-grid-label>教师食堂二层</i-grid-label>
+    </i-grid-item>
+     <i-grid-item bindtap="gotoDetail" data-item="{{datalist[7]}}">
+        <i-grid-icon>
+            <image src="{{imglist['教三']}}" />
+        </i-grid-icon>
+        <i-grid-label>教师食堂三层</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap="gotoDetail" data-item="{{datalist[8]}}">
+        <i-grid-icon>
+            <image src="{{imglist['教四']}}" />
+        </i-grid-icon>
+        <i-grid-label>教师食堂四层</i-grid-label>
+    </i-grid-item>
+</i-grid>
+
+<i-button bind:click="info" type="warning" shape="circle" size="large" ><text class = "button_text">评价本次用餐</text></i-button>
+

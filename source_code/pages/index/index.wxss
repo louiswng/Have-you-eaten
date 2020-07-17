@@ -1,0 +1,146 @@
+/* 轮播图 */
+
+swiper, swiper image {
+  width: 100vw;
+  height: 560rpx;
+}
+
+/* 三种模式 */
+
+.container {
+  padding: 30rpx;
+}
+
+.item {
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.english {
+  font-size: 30rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.right {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 模态对话框 */
+
+.show-btn {
+  margin-top: 100rpx;
+  color: #2c2;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-floor {
+  display: flex;
+  justify-content: center;
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  font-weight: bold;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.hover {
+  background-color: grey;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+
+.header {
+ margin: 90rpx 0 90rpx 50rpx;
+ border-bottom: 1px solid #ccc;
+ text-align: center;
+ width: 650rpx;
+ height: 300rpx;
+ line-height: 450rpx;
+}
+  
+.header image {
+ width: 200rpx;
+ height: 200rpx;
+}
+  
+.content {
+ margin-left: 50rpx;
+ margin-bottom: 90rpx;
+}
+  
+.content text {
+ display: block;
+ color: #9d9d9d;
+ margin-top: 40rpx;
+}
+  
+.bottom {
+ border-radius: 80rpx;
+ margin: 70rpx 50rpx;
+ font-size: 35rpx;
+}

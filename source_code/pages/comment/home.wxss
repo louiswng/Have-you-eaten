@@ -1,0 +1,27 @@
+/* page{
+  background: rgb(244, 245, 246, 1)
+} */
+
+.itemroot{
+  border-bottom: 1px solid gainsboro;
+  margin:15 rpx;
+
+}
+image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.button_text{
+ text-align:center;
+ padding:0px;
+ vertical-align:100% ;
+ line-height:60rpx;
+ margin:0px; 
+ Height:50px;
+ Width:60px;
+ font-size: 40rpx;
+}
+.bgcolor{
+  color: rgb(238, 22, 22);
+}

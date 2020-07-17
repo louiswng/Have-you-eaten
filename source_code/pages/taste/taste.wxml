@@ -1,0 +1,34 @@
+<view style="background-color:white">
+    <view class="title">基本口味</view>
+    <view class="list">
+        <view class="left">
+            <image style="height:80rpx;width:80rpx" src="https://i.loli.net/2020/03/03/aEQThHWgA1GPR3J.png" />
+            <view style="margin-left:20rpx">辣椒</view>
+        </view>
+        <view class="right">
+            <view >爆辣</view> <image style="height:50rpx;width:50rpx;margin:10rpx" src="https://i.loli.net/2020/03/21/Cvfb8oRQyI7at6q.png" />
+            <view >微辣</view> <image style="height:50rpx;width:50rpx;margin:10rpx" src="https://i.loli.net/2020/03/21/Qdfh4pKbL53ztWM.png" />
+            <view >不辣</view> <image style="height:50rpx;width:50rpx;margin-left:10rpx" src="https://i.loli.net/2020/03/21/Cvfb8oRQyI7at6q.png" />
+        </view>    
+    </view>
+
+    <view class="list">
+        <view class="left">
+            <image style="height:80rpx;width:80rpx" src="https://i.loli.net/2020/03/21/kzObmulF9nQPSag.png" />
+            <view style="margin-left:20rpx">海鲜</view>
+        </view>
+        <image style="height:50rpx;width:50rpx" src="https://i.loli.net/2020/03/21/Qdfh4pKbL53ztWM.png" />   
+    </view>
+</view>
+
+<view style="background-color:white">
+    <view class="title">地方性特色菜</view>
+
+    <view class="item" wx:for="{{array}}">
+        <view class="left">
+            <image style="height:80rpx;width:80rpx" src="{{item.srclist}}" />
+            <view style="margin-left:20rpx">{{item.namelist}}</view>
+        </view>
+        <image style="height:50rpx;width:50rpx" src="{{item.bottomlist}}" />  
+    </view>
+</view>

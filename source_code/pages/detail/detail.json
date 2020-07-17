@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "i-card": "../../dist/card/index"
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "食堂详情",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

@@ -1,0 +1,31 @@
+.i-steps {
+  padding: 10rpx;
+}
+
+._button {
+  margin: 0 auto;
+  padding-top: 8px;
+  width: 60%;
+}
+._button_text {
+  text-align:center;
+  padding:0px;
+  vertical-align:50% ;
+  line-height:22px;
+  margin:0px; 
+  Height:50px;
+  Width:60px;
+  font-size: 35rpx;
+}
+
+.show_people image{
+  display:flex;
+  justify-content: center;
+  width: 100vw;
+  height: 600rpx;
+  align-items:center; 
+}
+
+.show_people{
+  border-bottom: 1px solid #eee;
+}

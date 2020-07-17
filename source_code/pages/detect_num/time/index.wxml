@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class = "show_people">
+  <image style="height=500rpx" src='{{isDetect?backImg:originalImg}}' ></image>
+  <view style="display:flex;justify-content:center;align-items:center;height:100rpx">
+    <view style="font-size:32rpx">该层人数：</view>
+    <view>{{people_num}}</view>
+  </view>
+</view>
+
+<!-- <button bindtap='uploadImage'>上传图片</button> -->
+<!-- <view class = '_button'> <i-button type='warning' bindtap='downloadImage' size="small" shape="circle"> <text class="_button_text">获取食堂实时情况</text> </i-button> </view>
+<view class = '_button'> <i-button type='warning' bindtap='detect' size="small" shape="circle"> <text class="_button_text">检测食堂人流量</text> </i-button> </view> -->
+<view class = '_button'> <i-button type='warning' bindtap='uploadImage' size="small" shape="circle"> <text class="_button_text">上传食堂照片</text> </i-button> </view>
+
+<i-steps current="{{current}}" class = "i-steps">
+    <i-step>
+        <view slot="title">待获取</view>
+        <view slot="content">正在食堂的实时照片</view>
+    </i-step>
+    <i-step>
+        <view slot="title">待检测</view>
+        <view slot="content">获取图片成功</view>
+    </i-step>
+    <i-step>
+        <view slot="title">检测成功</view>
+        <view slot="content">食堂人流量检测完成</view>
+    </i-step>
+</i-steps>

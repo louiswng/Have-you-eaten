@@ -1,0 +1,75 @@
+<!-- 第一部分 -->
+<view class="box bgclr3e clrff pad20">
+    <view>
+        <image class="avatar" src="{{avatarUrl}}"></image>
+    </view>
+    <open-data type="userNickName"></open-data>
+    <view >
+        <image class="arrow" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png"> </image>
+    </view>
+</view>
+
+<!-- 第二部分 -->
+<view class="box bgclr3e clrff part2 pad20 font32">
+    <view class="block2">
+        <view >0</view>
+        <view >点赞</view>
+    </view>
+
+    <view class="block2">
+        <view >0</view>
+        <view >评论</view>
+    </view>
+
+    <view class="">
+        <view >0</view>
+        <view >7天访客</view>
+    </view>
+</view>
+
+<!-- 第三部分 -->
+<navigator class="part3" url="../msg/msg">
+    <view class="title">
+        <image style="height:80rpx;width:80rpx" src="https://i.loli.net/2020/03/08/XBMNwrf3TqWjCJ2.png" />
+        <view style="display:flex;align-items:center;margin-left:20rpx">消息通知</view>
+    </view>
+    <image class="arrow1" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png" />
+</navigator>
+
+<!-- 第四部分 -->
+<view class="part4" style="margin-top:30rpx">
+    <navigator class="item" url="../taste/taste">
+        <view class="title">
+            <image style="height:80rpx;width:80rpx;" src="https://i.loli.net/2020/03/08/yEn8t4FxGYzcXR7.png" />
+            <view style="display:flex;align-items:center;margin-left:20rpx">我的口味偏好</view>
+        </view>
+        <image class="arrow1" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png" />
+    </navigator>
+
+    <navigator class="item">
+        <view class="title">
+            <image style="height:80rpx;width:80rpx;" src="https://i.loli.net/2020/03/08/x2TZEJVvNUmLHKt.png" />
+            <view style="display:flex;align-items:center;margin-left:20rpx">我的饮食记录</view>
+        </view>
+        <image class="arrow1" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png" />
+    </navigator>
+</view>
+
+<!-- 第五部分 -->
+<view class="part4" style="margin-top:30rpx">
+    <navigator class="item">
+        <view class="title">
+            <image style="height:90rpx;width:90rpx;" src="https://i.loli.net/2020/03/08/ZxpBGEz8YkDAiKs.png" />
+            <view style="display:flex;align-items:center;margin-left:20rpx">合作反馈</view>
+        </view>
+        <image class="arrow1" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png" />
+    </navigator>
+
+    <navigator class="item">
+        <view class="title">
+            <image style="height:80rpx;width:80rpx;" src="https://i.loli.net/2020/03/08/CqiVRbGkNITAtZd.png" />
+            <view style="display:flex;align-items:center;margin-left:20rpx">关于我们</view>
+        </view>
+        <image class="arrow1" src="https://i.loli.net/2020/03/03/KbamdL5BesRGH29.png" />
+    </navigator>
+</view>

@@ -1,0 +1,25 @@
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30rpx;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.title{
+    padding: 10rpx 30rpx;
+    font-size: 32rpx;
+}

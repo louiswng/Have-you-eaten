@@ -1,0 +1,66 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__hd">
+    <view class="page__title">分享</view>
+    <view class="page__desc">请分享您本次的用餐体验吧！</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+
+    <!-- <view class="weui-cells__title">选择食堂</view> -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">用餐食堂</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindCafeteriaChange" value="{{cafeteriaIndex}}" range="{{cafeterias}}">
+            <view class="weui-select weui-select_in-select-after">{{cafeterias[cafeteriaIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+
+
+    <view class="page">
+      <view class="page__hd">
+        <view class="page__title">评分</view>
+        <view class="page__bd page__bd_spacing">
+          <!-- <slider max="10" value='5' show-value="true" block-size='20' block-color='lightblue' backgroundColor='white' activeColor='lightgreen' bindchange="change_rating"/> -->
+          <i-cell title="自定义星星个数">
+            <i-rate count="{{10}}" value="{{star}}" bind:change="change_rating" size="20">
+              {{star}}星
+            </i-rate>
+          </i-cell>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell ">
+          <view class="weui-cell__hd">
+            <view class="weui-label">用餐价格</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入价格" bindinput="getPrice" />
+          </view>
+        </view>
+
+      </view>
+      <!-- <view class="weui-cells__tips">您的用餐价格会对其他用户提供帮助</view> -->
+      <!-- <view class="weui-cells__title">评论框</view> -->
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入评价" style="height: 3.3em" bindinput="getComment" />
+            <view class="weui-textarea-counter">{{content.length}}/200</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells__tips">您的评价将会展示在该食堂的主页</view>
+
+      <view class="weui-btn-area">
+        <i-button class="weui-btn" type="warning" bindtap="submit" shape="circle"><text class="submit">确定</text></i-button>
+      </view>
+    </view>
+  </view>
+</view>

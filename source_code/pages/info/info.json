@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-rate": "../../dist/rate/index",
+    "i-input": "../../dist/input/index",
+    "i-button": "../../dist/button/index"
+  }
+}

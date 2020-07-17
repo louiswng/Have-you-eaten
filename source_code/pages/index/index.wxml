@@ -1,0 +1,30 @@
+<!--轮播图-->
+<swiper indicator-color="#fff" indicator-dots circular autoplay>
+  <swiper-item wx:for="{{imglist}}">
+    <image src="{{item}}"> </image>
+  </swiper-item>
+</swiper>
+
+<!--模式-->
+<view class="container">
+  <view class="list" wx:for="{{array}}">
+    <navigator bindtap="showDialogBtn" url=" " class="item" bindtap="mode" data-mode="{{item.titlelist}}">
+      <view class="left">
+        <text class="title">{{item.titlelist}}</text>
+        <text class="english">{{item.englishlist}}</text>
+      </view>
+      <image class="right" src="{{item.imagelist}}"></image>
+    </navigator>
+  </view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">推荐餐厅</view>
+  <view class="modal-floor">{{floor}}</view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" hover-class="hover" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" hover-class="hover" data-status="confirm">确定</view>
+  </view>
+</view>

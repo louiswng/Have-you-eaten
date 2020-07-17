@@ -1,0 +1,35 @@
+<!-- <view>这里最好插一些图片</view> -->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+  <view wx:for="{{swiperImg}}">
+    <swiper-item>
+      <image src="{{item.src}}"></image>
+    </swiper-item>
+  </view>
+</swiper>
+
+<i-card title="{{detail.title}}" extra="{{detail.desc}}" full="true">
+  <view slot="content">
+    <view>评分：{{detail.rating}}/10</view>
+    <view>平均价格：{{detail.price}}元</view>
+  </view>
+</i-card>
+
+<view class="tip">
+  <text>美食评论</text>
+  <image src = "{{comment_png}}" class = "comment_header"></image>
+</view>
+<!-- <block wx:for= "{{comment}}">
+  <view class="commentItem">
+    <text>{{item.name}}发表评论：</text>
+    <text>{{item.content}}</text>
+    <image class='image' src="{{favorUrl[index]}}" bindtap="click_favor" data-index="{{index}}" data-item="{{item}}"></image>
+  </view>
+</block> -->
+<block wx:for="{{comment}}">
+  <i-card title="{{item.name}}" extra="{{item.rating}}分 / {{item.price}}元" thumb="{{item.avatar}}" class = "i-card">
+    <view slot="content" >{{item.content}}</view>
+    <view slot="footer">
+      <image class='image' src="{{favorUrl[index]}}" bindtap="click_favor" data-index="{{index}}" data-item="{{item}}"></image>
+    </view>
+  </i-card>
+</block>

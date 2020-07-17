@@ -1,0 +1,22 @@
+<view class="list" wx:for="{{array}}">
+    <view class="head">
+        <view class="left">
+            <image class="avatar" src="{{item.avatarlist}}"/>
+            <view style="font-size:32rpx;color:grey;margin-left:30rpx">
+                <view >{{item.namelist}}</view>
+                <view >{{item.timelist}}</view>
+            </view>
+        </view>
+        <view style="font-size:32rpx;color:blueviolet">回复</view>
+    </view>
+
+    <view class="content">
+        <image style="height:50rpx;width:50rpx" src="{{item.srclist1}}"/>
+        <view style="margin-left:10rpx;">{{item.contentlist}}</view>
+    </view>
+
+    <view class="commend">
+        <image style="height:200rpx;width:400rpx;background-color:white" src="{{item.srclist2}}" />
+        <view class="commend_detail">{{item.commendlist}}</view>
+    </view>
+</view>

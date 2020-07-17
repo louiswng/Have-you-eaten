@@ -1,0 +1,101 @@
+page{
+  background-color: rgb(244, 245, 246, 1);
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.clrff{
+  color: #fff;
+}
+.pad20{
+  padding: 20rpx;
+}
+.font32{
+  font-size: 32rpx;
+}
+.bgclr3e{
+  background-color: #FFA500;
+}
+.bgclrwhite{
+  background-color: white;
+}
+
+.avatar{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.arrow{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+.part2{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.block2{
+  border-right: 1px solid white;
+  padding-right: 80rpx;
+}
+
+.img3{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.block5{
+  margin: 10rpx;
+  padding-right: 80rpx;
+}
+
+.part5{
+  margin-top: 30rpx;
+}
+.part6{
+  margin-top: 30rpx;
+}
+
+.block6{
+  width: 620rpx;
+  margin: 20rpx;
+}
+
+.part3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 32rpx;
+  margin: 30rpx 0;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(244, 245, 246, 1);
+}
+
+.title{
+  display: flex;
+  margin: 10rpx 30rpx;
+}
+
+.part4{
+  background-color: white;
+  font-size: 32rpx;
+}
+.arrow1{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 40rpx;
+}

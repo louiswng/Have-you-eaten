@@ -1,0 +1,65 @@
+
+<view class="container" wx:for="{{array}}">
+    <navigator url="{{item.urllist}}" class="item" bindtap="detect" data-num="{{index+1}}">
+        <view class="left">
+            <text class="floor">{{item.floorlist}}</text>
+            <text class="english">现有{{numPeople[index]}}人</text>
+        </view>
+        <view class="right">
+            <view wx:if="{{numPeople[index]<20}}">
+                <view class="people">
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                </view>
+            </view>
+            <view wx:elif="{{numPeople[index]<50}}">
+                <view class="people">
+                    <image class="img" src="{{green}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                </view>
+            </view>
+            <view wx:elif="{{numPeople[index]<80}}">
+                <view class="people">
+                    <image class="img" src="{{green}}"></image>
+                    <image class="img" src="{{green}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                </view>
+            </view>
+            <view wx:elif="{{numPeople[index]<120}}">
+                <view class="people">
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                </view>
+            </view>
+            <view wx:elif="{{numPeople[index]<150}}">
+                <view class="people">
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{yellow}}"></image>
+                    <image class="img" src="{{gray}}"></image>
+                </view>
+            </view>
+            <view wx:else>
+                <view class="people">
+                    <image class="img" src="{{red}}"></image>
+                    <image class="img" src="{{red}}"></image>
+                    <image class="img" src="{{red}}"></image>
+                    <image class="img" src="{{red}}"></image>
+                    <image class="img" src="{{red}}"></image>
+                </view>
+            </view>
+        </view>
+    </navigator>   
+</view>
